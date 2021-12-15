@@ -7,8 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>1105</width>
-    <height>892</height>
+    <height>900</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>900</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -17,132 +23,268 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>481</width>
-      <height>301</height>
+      <x>-10</x>
+      <y>0</y>
+      <width>501</width>
+      <height>361</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string/>
     </property>
     <widget class="QPushButton" name="btn_search">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>240</y>
-       <width>171</width>
-       <height>41</height>
+       <x>175</x>
+       <y>255</y>
+       <width>131</width>
+       <height>51</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="text">
-      <string>검색</string>
+      <string>검  색</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>55</y>
+       <width>75</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;시작날짜&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="date_start">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>55</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="maximumDateTime">
+      <datetime>
+       <hour>23</hour>
+       <minute>59</minute>
+       <second>59</second>
+       <year>2021</year>
+       <month>11</month>
+       <day>30</day>
+      </datetime>
+     </property>
+     <property name="minimumDateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2019</year>
+       <month>1</month>
+       <day>2</day>
+      </datetime>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="date">
+      <date>
+       <year>2021</year>
+       <month>9</month>
+       <day>14</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>55</y>
+       <width>75</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;종료날짜&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="date_end">
+     <property name="geometry">
+      <rect>
+       <x>355</x>
+       <y>55</y>
+       <width>110</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="maximumDate">
+      <date>
+       <year>2021</year>
+       <month>11</month>
+       <day>30</day>
+      </date>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="date">
+      <date>
+       <year>2021</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radio_supplier_1">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>130</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 13pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="text">
+      <string>외국인</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radio_supplier_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 13pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="text">
+      <string>기관</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radio_supplier_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>130</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>휴먼편지체</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 13pt &quot;휴먼편지체&quot;;</string>
+     </property>
+     <property name="text">
+      <string>개인</string>
      </property>
     </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>120</y>
-       <width>381</width>
-       <height>47</height>
+       <x>160</x>
+       <y>190</y>
+       <width>165</width>
+       <height>32</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
-       <widget class="QRadioButton" name="radio_supplier_1">
-        <property name="text">
-         <string>외국인</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QRadioButton" name="radio_supplier_2">
-        <property name="text">
-         <string>기관</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QRadioButton" name="radio_supplier_3">
-        <property name="text">
-         <string>개인</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>30</y>
-       <width>176</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <layout class="QFormLayout" name="formLayout_2">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>시작날짜</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QDateEdit" name="date_start">
-        <property name="calendarPopup">
-         <bool>true</bool>
-        </property>
-        <property name="date">
-         <date>
-          <year>2021</year>
-          <month>1</month>
-          <day>1</day>
-         </date>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QDateEdit" name="date_end">
-        <property name="calendarPopup">
-         <bool>true</bool>
-        </property>
-        <property name="date">
-         <date>
-          <year>2021</year>
-          <month>1</month>
-          <day>1</day>
-         </date>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>종료날짜</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>190</y>
-       <width>153</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QFormLayout" name="formLayout_3">
-      <item row="0" column="0">
        <widget class="QRadioButton" name="radio_buy">
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Courier New&quot;;
+font: 13pt &quot;휴먼편지체&quot;;</string>
+        </property>
         <property name="text">
          <string>순매수</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -151,6 +293,16 @@
       </item>
       <item row="0" column="1">
        <widget class="QRadioButton" name="radio_sell">
+        <property name="maximumSize">
+         <size>
+          <width>260</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt &quot;Courier New&quot;;
+font: 13pt &quot;휴먼편지체&quot;;</string>
+        </property>
         <property name="text">
          <string>순매도</string>
         </property>
@@ -158,14 +310,31 @@
       </item>
      </layout>
     </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>361</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;휴먼편지체&quot;;
+color: rgb(25, 0, 221);</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>20</y>
-      <width>591</width>
-      <height>781</height>
+      <x>490</x>
+      <y>0</y>
+      <width>601</width>
+      <height>801</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -177,10 +346,10 @@
     <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>-1</x>
-       <y>-1</y>
-       <width>601</width>
-       <height>781</height>
+       <x>0</x>
+       <y>0</y>
+       <width>611</width>
+       <height>791</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout"/>
@@ -189,11 +358,21 @@
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>330</y>
-      <width>481</width>
-      <height>471</height>
+      <x>0</x>
+      <y>350</y>
+      <width>490</width>
+      <height>441</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>481</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;휴먼편지체&quot;;
+</string>
     </property>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>95</number>
@@ -202,31 +381,69 @@
      <property name="text">
       <string>종목코드</string>
      </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>종목명</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
      </property>
     </column>
     <column>
      <property name="text">
       <string>일수</string>
      </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>등락율</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>그래프</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
      </property>
     </column>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>370</y>
-      <width>81</width>
+      <x>420</x>
+      <y>390</y>
+      <width>71</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;
+ QPushButton#evilButton {
+     background-color: red;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px;
+ }
+ QPushButton#evilButton:pressed {
+     background-color: rgb(224, 0, 0);
+     border-style: inset;
+ }
+</string>
     </property>
     <property name="text">
      <string>선택1</string>
@@ -235,11 +452,14 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>410</y>
-      <width>81</width>
+      <x>420</x>
+      <y>427</y>
+      <width>71</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
     </property>
     <property name="text">
      <string>선택2</string>
@@ -248,11 +468,14 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>450</y>
-      <width>81</width>
+      <x>420</x>
+      <y>464</y>
+      <width>71</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
     </property>
     <property name="text">
      <string>선택3</string>
@@ -261,11 +484,14 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>480</y>
-      <width>81</width>
+      <x>420</x>
+      <y>501</y>
+      <width>71</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
     </property>
     <property name="text">
      <string>선택4</string>
@@ -274,14 +500,113 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>520</y>
-      <width>81</width>
+      <x>420</x>
+      <y>538</y>
+      <width>71</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
     <property name="text">
      <string>선택5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>575</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>선택6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>612</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>선택7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>649</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>선택8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>686</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>선택9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>723</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>선택10</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>972</x>
+      <y>800</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;휴먼편지체&quot;;</string>
+    </property>
+    <property name="text">
+     <string>그래프 저장</string>
     </property>
    </widget>
   </widget>
